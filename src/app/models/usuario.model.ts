@@ -1,4 +1,4 @@
-export interface ResponseUser {
+export interface ResponseUsers {
   page: number;
   per_page: number;
   total: number;
@@ -20,4 +20,9 @@ export class User {
 interface Support {
   url: string;
   text: string;
+}
+
+export interface ResponseUser {
+  data: User;
+  support: Support;
 }
